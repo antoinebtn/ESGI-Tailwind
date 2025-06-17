@@ -29,8 +29,8 @@
 
   <main class="container mx-auto">
     <div
-      class=" my-4 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg flex justify-between items-center shadow-md py-4">
-      <div class="p-4 w-[60%] md:w-[80%]">
+      class=" my-4 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg flex justify-between items-center shadow-md py-4 relative overflow-hidden">
+      <div class="p-4 w-[60%] md:w-[80%] z-10">
         <p class="text-white text-2xl mx-4">Paris, France</p>
         <p class="text-white text-lg mx-4 mb-4 font-thin">Mercredi, 16 Décembre 2024</p>
         <div class="flex flex-row">
@@ -41,13 +41,15 @@
           </div>
         </div>
       </div>
-      <div class="flex flex-col items-center md:w-[20%] w-[30%]">
+      <div class="flex flex-col justify-end md:w-[10%] w-[30%] z-10">
         <i data-lucide="sun" class="text-yellow-300 fill-yellow-300 h-36 w-26 mx-auto"></i>
         <div class="pr-8">
           <p class="text-white text-end">Max: 26°</p>
           <p class="text-white text-end">Min: 18°</p>
         </div>
       </div>
+      <div class="absolute -top-24 -right-24 w-58 h-58 bg-white rounded-full opacity-10 z-1"></div>
+      <div class="absolute -bottom-14 -left-14 w-36 h-36 bg-white rounded-full opacity-10 z-1"></div>
     </div>
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 my-4">
       <div class="bg-white rounded-lg shadow-md p-4">
