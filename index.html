@@ -2,20 +2,52 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="output.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="output.css">
 </head>
 
-<body>
+<body class="bg-slate-100">
+  <nav class="bg-white shadow-md">
+    <div class="container mx-auto flex flex-col md:flex-row justify-between items-center py-4">
+      <div class="flex items-center">
+        <i data-lucide="sun"
+          class="text-white bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg h-8 w-8 p-2 fill-white"></i>
+        <p class="text-2xl font-bold mx-2">WeatherPro</p>
+      </div>
+      <div class="flex *:justify-between items-center mt-4 md:mt-0 md:mr-4">
+        <div class="relative mx-6">
+          <input type="text" placeholder="Rechercher une ville"
+            class="border-2 border-slate-300 rounded-lg px-4 py-2 pl-10">
+          <i data-lucide="search" class="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-4 h-4"></i>
+        </div>
+        <i data-lucide="settings"></i>
+      </div>
+    </div>
+  </nav>
 
-<nav>
-
-</nav>
-<main>
-    <div>
-
+  <main>
+    <div
+      class="container mx-auto my-4 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg flex justify-between items-center shadow-md py-4">
+      <div class="p-4 w-[60%] md:w-[80%]">
+        <p class="text-white text-2xl mx-4">Paris, France</p>
+        <p class="text-white text-lg mx-4 mb-4 font-thin">Mercredi, 16 Décembre 2024</p>
+        <div class="flex flex-row">
+          <p class="text-white text-6xl font-thin mx-4">22°</p>
+          <div class="flex flex-col justify-center">
+            <p class="text-white text-xl">Ensoleillé</p>
+            <p class="text-white text-lg font-thin">Ressenti 25°</p>
+          </div>
+        </div>
+      </div>
+      <div display="flex" class="flex-col items-center md:w-[20%] w-[30%]">
+        <i data-lucide="sun" class="text-yellow-300 fill-yellow-300 h-36 w-26 mx-auto"></i>
+        <div class="pr-8">
+          <p class="text-white text-end">Max: 26°</p>
+          <p class="text-white text-end">Min: 18°</p>
+        </div>
+      </div>
     </div>
     <div>
 
@@ -26,10 +58,9 @@
     <div>
 
     </div>
-</main>
-<script src="https://unpkg.com/lucide@latest"></script>
-<script>
+  </main>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
     lucide.createIcons();
-</script>
+  </script>
 </body>
-
